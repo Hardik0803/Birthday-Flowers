@@ -42,6 +42,8 @@ body {
   justify-content: center;
   /* margin-top: 35%; */
   font-size:30px;
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fadeIn 2s ease-in-out 4s forwards; /* Apply animation with a 2-second delay */
   
 }
 
@@ -1004,3 +1006,12 @@ body {
   h1{
       margin-top: 35%;
   }}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
